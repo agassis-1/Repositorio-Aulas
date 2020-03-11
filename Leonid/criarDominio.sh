@@ -8,7 +8,7 @@ zone \"$dominio\" {
 	file \"/etc/bind/db.$dominio\";
 };" >> /etc/bind/named.conf.default-zones
 
-cp ./db.agassis.com.br /etc/bind/db.$dominio
+cp ./db.modelo.com.br /etc/bind/db.$dominio
 
 sed -i s/localhost/$dominio/g /etc/bind/db.$dominio
 
